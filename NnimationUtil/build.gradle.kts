@@ -25,6 +25,8 @@ android {
     compileSdk = 34
 
     defaultConfig {
+        multiDexEnabled = true
+
         minSdk = 17
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -53,6 +55,10 @@ android {
     }
 }
 
+/*
+* Java8 최소 2.0.0	7.4.0-alpha10 gradle
+* 기존 gradle은 8.0이었기 때문에 바꿔주어야 함
+* */
 dependencies {
     implementation("com.google.android.material:material:1.10.0")
 }
