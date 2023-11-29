@@ -34,7 +34,6 @@ android {
 }
 
 dependencies {
-
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
@@ -45,7 +44,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.b3lon9"
             artifactId = "NnimationUtil"
-            version = "1.2.6"
+            version = "1.2.7"
 
             afterEvaluate {
                 from(components["release"])
