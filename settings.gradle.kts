@@ -15,5 +15,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "AnimateLibrary"
-include(":app")
-include(":NnimationUtil")
+// include(":app")
+// include(":NnimationUtil")

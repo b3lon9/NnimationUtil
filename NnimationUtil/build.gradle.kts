@@ -22,7 +22,7 @@ plugins {
 
 android {
     namespace = "kr.co.cavedwellers.nnimationutil"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         minSdk = 17
