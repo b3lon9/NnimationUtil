@@ -43,4 +43,16 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
 
-group="com.github.b3lon9"
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.b3lon9"
+            artifactId = "NnimationUtil"
+            version = "1.0"
+
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
+}
