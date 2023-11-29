@@ -25,8 +25,6 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        multiDexEnabled = true
-
         minSdk = 17
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -60,7 +58,8 @@ android {
 * 기존 gradle은 8.0이었기 때문에 바꿔주어야 함
 * */
 dependencies {
-    implementation("com.google.android.material:material:1.10.0")
+    implementation ("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.8.0")
 }
 
 group="com.github.b3lon9"
