@@ -48,7 +48,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.b3lon9"
             artifactId = "NnimationUtil"
-            version = "1.0"
+            version = "1.2.1"
 
             afterEvaluate {
                 from(components["release"])
