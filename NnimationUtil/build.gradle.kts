@@ -15,9 +15,9 @@
  */
 
 plugins {
+    id("maven-publish")
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
-    id("maven-publish")
 }
 
 android {
@@ -63,12 +63,14 @@ dependencies {
     implementation("com.google.android.material:material:1.8.0")
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            create<MavenPublication>("mavenJava") {
-                groupId = "com.github.b3lon9"
-            }
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "com.github.b3lon9"
+            artifactId = "library"
+            version = "1.1.7"
+
+            // from(components["java"])
         }
     }
 }
