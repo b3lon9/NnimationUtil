@@ -58,6 +58,7 @@ android {
 * 기존 gradle은 8.0이었기 때문에 바꿔주어야 함
 * */
 dependencies {
+    implementation ("androidx.core:core-ktx:1.7.0")
     implementation ("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.8.0")
 }
